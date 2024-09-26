@@ -1,7 +1,6 @@
 package org.xlyo.anywild;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -17,6 +16,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 import org.xlyo.anywild.registry.ModEnchantments;
+import org.xlyo.anywild.registry.ModEntityTypes;
+import org.xlyo.anywild.registry.ModItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Anywild.MODID)
@@ -34,6 +35,10 @@ public class Anywild
 
         // 注册附魔
         ModEnchantments.register(modEventBus);
+        // 注册物品
+        ModItems.register(modEventBus);
+        // 注册实体类型
+        ModEntityTypes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -58,18 +63,5 @@ public class Anywild
     {
         // Do something when the server starts
 //        LOGGER.info("HELLO from server starting");
-    }
-
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-            // Some client setup code
-//            LOGGER.info("HELLO FROM CLIENT SETUP");
-//            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-        }
     }
 }
