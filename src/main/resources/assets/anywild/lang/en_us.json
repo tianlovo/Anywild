@@ -1,0 +1,6 @@
+{
+  "enchantment.anywild.gambler": "Gambler",
+  "enchantment.anywild.gambler.desc": "All or nothing!",
+  "death.attack.gambler": "%1$s has nothing",
+  "death.attack.gambler.player": "%1$s lost a bet with %2$s"
+}

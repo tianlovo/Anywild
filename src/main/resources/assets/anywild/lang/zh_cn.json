@@ -1,0 +1,6 @@
+{
+  "enchantment.anywild.gambler": "赌徒",
+  "enchantment.anywild.gambler.desc": "所有 或 一无所有！",
+  "death.attack.gambler": "%1$s一无所有",
+  "death.attack.gambler.player": "%1$s与%2$s对赌输了"
+}
