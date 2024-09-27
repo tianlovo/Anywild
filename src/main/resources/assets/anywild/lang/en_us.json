@@ -1,5 +1,7 @@
 {
   "item.anywild.explosive_arrow": "Explosive Arrow",
+  "itemGroup.anywild_tab": "AnyWild",
+  "entity.anywild.explosive_arrow": "Flying Explosive Arrow",
   "enchantment.anywild.gambler": "Gambler",
   "enchantment.anywild.gambler.desc": "All or nothing!",
   "death.attack.gambler": "%1$s has nothing",

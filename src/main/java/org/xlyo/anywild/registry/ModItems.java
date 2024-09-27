@@ -1,6 +1,5 @@
 package org.xlyo.anywild.registry;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,5 +20,5 @@ public class ModItems {
     public static final RegistryObject<Item> EXPLOSIVE_ARROW =
             ITEMS.register("explosive_arrow",
             () -> new ExplosiveArrowItem(
-                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))); // 设置在战斗物品栏中
+                    new Item.Properties().tab(ModCreativeTabs.ANYWILD_TAB))); // 设置在战斗物品栏中
 }

@@ -25,7 +25,6 @@ public class ExplosiveArrowEntity extends AbstractArrow {
 
     @Override
     protected void onHit(@NotNull HitResult result) {
-        LOGGER.info("Arrow hit something");
         super.onHit(result);
 
         // 检查是否在服务器端执行
