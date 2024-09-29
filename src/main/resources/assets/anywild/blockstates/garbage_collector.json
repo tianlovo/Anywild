@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "anywild:block/garbage_collector"
+    }
+  }
+}

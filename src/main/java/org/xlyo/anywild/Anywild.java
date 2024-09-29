@@ -15,6 +15,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
+import org.xlyo.anywild.registry.ModBlocks;
+import org.xlyo.anywild.registry.ModItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Anywild.MODID)
@@ -30,7 +32,10 @@ public class Anywild
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
 
-
+        // 注册方块
+        ModBlocks.register(modEventBus);
+        // 注册物品
+        ModItems.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
