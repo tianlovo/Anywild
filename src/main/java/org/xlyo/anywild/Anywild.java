@@ -16,6 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 import org.xlyo.anywild.registry.ModBlocks;
+import org.xlyo.anywild.registry.ModCreativeTabs;
 import org.xlyo.anywild.registry.ModItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -36,6 +37,8 @@ public class Anywild
         ModBlocks.register(modEventBus);
         // 注册物品
         ModItems.register(modEventBus);
+        // 注册创造物品栏
+        ModCreativeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "L": {
+      "item": "minecraft:lava_bucket"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    }
+  },
+  "pattern": [
+    "IOI",
+    "OLO",
+    "IHI"
+  ],
+  "result": {
+    "item": "anywild:garbage_collector"
+  },
+  "show_notification": true
+}

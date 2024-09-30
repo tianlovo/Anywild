@@ -1,3 +1,4 @@
 {
-  "block.anywild.garbage_collector": "垃圾回收器"
+  "block.anywild.garbage_collector": "垃圾回收器",
+  "itemGroup.anywild_tab": "Anywild"
 }
