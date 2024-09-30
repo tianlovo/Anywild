@@ -8,6 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.xlyo.anywild.Anywild;
+import org.xlyo.anywild.object.block.GarbageCollector;
 
 public class ModBlocks {
     private static final DeferredRegister<Block> BLOCKS =
@@ -21,8 +22,5 @@ public class ModBlocks {
 
     // 垃圾回收器
     public static final RegistryObject<Block> GARBAGE_COLLECTOR =
-            BLOCKS.register("garbage_collector",
-                    () -> new Block(BlockBehaviour.Properties.of()
-                            .strength(3.5f)
-                            .sound(SoundType.METAL)));
+            BLOCKS.register("garbage_collector", GarbageCollector::new);
 }

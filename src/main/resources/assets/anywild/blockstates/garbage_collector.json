@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "anywild:block/garbage_collector"
+    },
+    "facing=east": {
+      "model": "anywild:block/garbage_collector",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "anywild:block/garbage_collector",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "anywild:block/garbage_collector",
+      "y": 270
     }
   }
 }
