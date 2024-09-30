@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
+import org.xlyo.anywild.registry.ModBlockEntities;
 import org.xlyo.anywild.registry.ModBlocks;
 import org.xlyo.anywild.registry.ModCreativeTabs;
 import org.xlyo.anywild.registry.ModItems;
@@ -35,6 +36,8 @@ public class Anywild
 
         // 注册方块
         ModBlocks.register(modEventBus);
+        // 注册方块实体
+        ModBlockEntities.register(modEventBus);
         // 注册物品
         ModItems.register(modEventBus);
         // 注册创造物品栏
